@@ -1,0 +1,2 @@
+# MathJax_jsDelivr
+LaTeX
