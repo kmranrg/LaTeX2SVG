@@ -1,0 +1,112 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f9fafc;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  margin-bottom: 1rem;
+}
+
+/* Heading */
+h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #0077b6;
+  padding-bottom: 0.5rem;
+  color: #0077b6;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 1rem;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  background: #fdfdfd;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #0077b6;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #005f94;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Math Output */
+#math {
+  margin-top: 1.5rem;
+  border: 1px dashed #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #fafafa;
+  min-height: 100px;
+  text-align: center;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+footer .author-link {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+footer .author-link:hover {
+  text-decoration: underline;
+  color: #005f94;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
